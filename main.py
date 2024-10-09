@@ -23,7 +23,7 @@ while True:
             if data:
                 print(f'Received: {data.decode("utf-8")}')
                 # Send data back to the client
-                response = f'Python received: {data.decode("utf-8")}'
+                response = f'{data.decode("utf-8")}'
                 connection.sendall(response.encode('utf-8'))
             else:
                 # Break the loop when there's no more data
